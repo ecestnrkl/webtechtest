@@ -198,7 +198,7 @@ Nun sollte die GET Ausgabe wie folgt sein:
 Mit POST an http://127.0.0.1:1000/users/logout wirst du ausgeloggt und bekommst die Nachricht "Bye bye" und 200 OK zurück. Wenn man sich jetzt mit POST an
 http://127.0.0.1:1000/users/login anmeldet, wird ein neuer Token generiert. 
 
-Benutzte Quellen: <br>
+Benutzte Quellen: -> test <br>
 https://www.youtube.com/watch?v=fgTGADljAeg <br>
 https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/mongoose#designing_the_locallibrary_models <br>
 https://mongoosejs.com/docs/api.html#schematype_SchemaType-required <br>
