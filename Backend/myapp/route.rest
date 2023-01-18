@@ -1,0 +1,80 @@
+GET http://127.0.0.1:1000/users
+
+###
+
+GET http://127.0.0.1:1000/details
+
+###
+
+GET http://127.0.0.1:1000/users/63bebd1237c4f17e49f984e5
+
+###
+
+GET http://127.0.0.1:1000/details/63bf05ba5d508ab5e15a70bb
+
+###
+
+POST http://127.0.0.1:1000/users
+Content-Type: application/json
+
+{ 
+    "name": "Ece Sutanrikulu",
+    "email": "ece.sut@hm.edu",
+    "password": "nlndwndnwocnw93"
+}
+
+###
+POST http://127.0.0.1:1000/users/login
+Content-Type: application/json
+
+{ 
+    "email": "ece.sut@hm.edu",
+    "password": "nlndwndnwocnw93"
+}
+
+
+###
+
+POST http://127.0.0.1:1000/users/logout
+Content-Type: application/json
+
+
+
+###
+
+POST http://127.0.0.1:1000/details
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2M4NDc2ZGQxY2U5NDNhOGQyZjExMTAiLCJpYXQiOjE2NzQwNzkzOTF9.9zS9QfbuDKDbITYhPIm41Wlth5_7ZFO49CBfzsXOLFA
+Content-Type: application/json
+ 
+
+{ 
+    "age": 24,
+    "destination": "München",
+    "faveColor": "blue"
+}
+
+###
+ 
+PATCH http://127.0.0.1:1000/users/63bebd1237c4f17e49f984e5
+Content-Type: application/json
+
+{ 
+    "name": "Ece Sut",
+    "password": "ndcuwhcuz38d"
+}
+
+###
+
+PATCH http://127.0.0.1:1000/details/63bf0b298e9370d3ec3ef111
+Content-Type: application/json
+
+{ 
+    "age": 25,
+    "destination": "München",
+    "faveColor": "red"
+}
+
+
+###
+
+DELETE http://127.0.0.1:1000/users/63c72268fbb6c2a566f8cb0c
